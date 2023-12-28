@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("image/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 94vh;
+    position: relative;
+}
+
+.main .box {
+    height: 94vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0px 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 8px 14px;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.342);
+    color: white;
+    border: 1px soid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-red {
+    background-color: red;
+    color: #ffffff;
+    padding: 15px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+.btn-red-sm:hover{
+    border-radius: 15px;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 10px 10px;
+    color: white;
+    text-align: start;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(247, 243, 243, 0.5);
+}
+
+.bar {
+    background-color: grey;
+    height: 11px;
+}
+
+.first {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+
+.third div video {
+    height: 161x;
+    width: 350px;
+    right: 99px;
+    top: 22px
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 24px;
+    max-width: 80vw;
+    margin: 34px auto;
+
+}
+
+
+
+
+@media screen and (max-width:960px) {
+    nav {
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .third div video {
+        width: 190px;
+        right: 55px;
+        top: 22px
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:280px) {
+    .main {
+        height: 100vh;
+    }
+
+    .main .box {
+        height: 100vh;
+
+    }
+
+    nav {
+
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .first>div :nth-child(1) {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .hero {
+        padding: 0px;
+    }
+
+    .main input {
+        padding: 20px 10px;
+        font-size: 16px;
+    }
+
+    .first {
+        height: 78vh;
+    }
+
+    .first h2 {
+        margin: 0;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .faq h2 {
+        font-size: 3rem;
+    }
+
+    .faqbox {
+        padding: 22px;
+        font-size: 21px;
+    }
+}
