@@ -106,6 +106,8 @@ nav button {
 }
 
 .btn-red-sm:hover{
+    background-color: black;
+    color: red;
     border-radius: 15px;
 }
 .hero-buttons {
@@ -155,8 +157,8 @@ nav button {
 .secImg video {
     position: absolute;
     top: 51px;
-    right: 0;
-    width: 555px;
+    right: 3px;
+    width: 552px;
 
 }
 
@@ -191,6 +193,7 @@ section.first>div {
 
 .faq h2 {
     text-align: center;
+    font-size: 3rem;
 }
 
 .faqbox {
@@ -216,17 +219,13 @@ section.first>div {
         height: 100vh;
     }
 
-    .secImg img {
-        width: 305px;
-    }
-
     .secImg video {
-        width: 305px;
+        width: 500px;
     }
 
     .third div video {
-        width: 190px;
-        right: 55px;
+        width: 350px;
+        right: 100px;
         top: 22px
     }
 
@@ -247,8 +246,21 @@ section.first>div {
     }
 }
 
+@media screen and (max-width:520px){
+    .secImg img{
+        width: 380px;
+    }
+    .secImg video{
+        width: 350px;
+    }
 
-@media screen and (max-width:280px) {
+    .third div video{
+        width: 238px;
+        right: 72px;
+    }
+}
+
+@media screen and (max-width:380px) {
     .main {
         height: 100vh;
     }
@@ -295,6 +307,20 @@ section.first>div {
 
     .faq h2 {
         font-size: 3rem;
+    }
+
+    .secImg img{
+        width: 266px;
+    }
+
+    .secImg video {
+        width: 244px;
+        top: 42px;
+    }
+
+    .third div video {
+        width: 150px;
+        right: 59px;
     }
 
     .faqbox {

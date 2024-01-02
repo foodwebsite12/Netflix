@@ -1,47 +1,59 @@
-body{
+body {
     background-image: url('/image/background.jpg');
 }
 
-body >div{
+body>div {
     background-color: rgba(0, 0, 0, 0.5);
-    width:453px;
+    width: 62vw;
     height: 80vh;
-    margin: 112px auto;
+    margin: 64px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 27px 10px royalblue;
 }
 
-.box{
-    margin: 0px 80px ;
+.box {
+    width: 100%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
-h1{
+h1 {
+    font-size: 4rem;
+    text-align: center;
     color: white;
 }
 
-form{
+form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-form input{
-    height: 45px;
-    width: 296px;
+form input {
+    margin: 0px auto;
+    height: 55px;
+    width: 90%;
     border-radius: 6px;
     background-color: #00000042;
-    color:white;
-    font-size: 1rem;
+    color: white;
+    font-size: 1.5rem;
 }
 
+form button {
+    margin: 0px auto;
+    background-color: red;
+    color: white;
+    height: 55px;
+    width: 90%;
+    font-size: 2rem;
+    border-radius: 6px;
+}
 
-form button{
- background-color: red;
- color: white;
- height: 50px;
- width: 303px;
- font-size: 1rem;
- border-radius: 6px;
+@media screen and (max-width:800px) {
+    body>div{
+        width: 90vw;
+    }
 }
